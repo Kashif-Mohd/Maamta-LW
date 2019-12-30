@@ -1,0 +1,14 @@
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\maamta\maamta\bin\maamta.dll
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\maamta\maamta\bin\maamta.pdb
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\maamta\maamta\obj\Release\maamta.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\maamta\maamta\obj\Release\maamta.dll
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\maamta\maamta\obj\Release\maamta.pdb
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\bin\maamta.dll
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\bin\maamta.pdb
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\bin\MySql.Data.Entity.dll
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\bin\MySql.Data.Entity.EF6.dll
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\bin\MySql.Fabric.Plugin.dll
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\bin\MySql.Data.Entity.EF6.xml
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\obj\Release\maamta.csprojResolveAssemblyReference.cache
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\obj\Release\maamta.dll
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\obj\Release\maamta.pdb
