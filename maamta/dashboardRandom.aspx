@@ -28,7 +28,10 @@
     <div style="width: 100%; text-align: center; overflow: auto; margin-top: 30px">
         <asp:Chart ID="Chart1" runat="server" Width="1000" Height="400px">
             <ChartAreas>
-                <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                <asp:ChartArea Name="ChartArea1">
+                    <AxisX Interval="1" TextOrientation="Rotated90">
+                    </AxisX>
+                </asp:ChartArea>
             </ChartAreas>
             <Legends>
                 <asp:Legend Name="Legend1" Title="Sites" Font="Microsoft Sans Serif, 10.25pt" TitleFont="Arial Rounded MT Bold, 12.25pt">
@@ -48,7 +51,7 @@
         <hr style="border-top: 1px solid #ccc; background: transparent;">
 
 
-        <asp:Label ID="lbeTotalEnrollment" runat="server" Text="" Font-Bold="true" Font-Size="Large" ForeColor="#00b894" Font-Underline="true"></asp:Label><br/>
+        <asp:Label ID="lbeTotalEnrollment" runat="server" Text="" Font-Bold="true" Font-Size="Large" ForeColor="#00b894" Font-Underline="true"></asp:Label><br />
 
         <asp:Chart ID="Chart2" runat="server" Width="1000" Height="400px">
             <Series>
@@ -56,7 +59,10 @@
                 </asp:Series>
             </Series>
             <ChartAreas>
-                <asp:ChartArea Name="ChartArea2"></asp:ChartArea>
+                <asp:ChartArea Name="ChartArea2">
+                    <AxisX Interval="1" TextOrientation="Rotated90">
+                    </AxisX>
+                </asp:ChartArea>
             </ChartAreas>
             <Titles>
                 <asp:Title Docking="Left" Name="Left Title" Text="Total" Font="Arial Rounded MT Bold, 12pt, ">
