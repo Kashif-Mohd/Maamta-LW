@@ -45,6 +45,7 @@ namespace maamta
         public void showalert(string message)
         {
             string script = @"alert('" + message + "');";
+
             ScriptManager.RegisterStartupScript(this, this.GetType(), "Alert", script, true);
         }
 
