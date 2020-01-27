@@ -120,7 +120,8 @@
                     <asp:BoundField DataField="lw_crf_3a_3" HeaderText="Time of Visit" />
                     <asp:BoundField DataField="lw_crf_3a_18" HeaderText="Form Random ID" />
                     <asp:BoundField DataField="randomization_id" HeaderText="Correct Random ID" />
-                    <asp:BoundField DataField="lw_crf_3a_19" HeaderText="Form ARM" />
+                    <asp:BoundField DataField="lw_crf_3a_19" HeaderText="Form3a ARM" />
+                    <asp:BoundField DataField="lw_crf3c_28" HeaderText="Form3c ARM" />
                     <asp:BoundField DataField="treatment" HeaderText="Correct ARM" />
                 </Columns>
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
@@ -154,7 +155,8 @@
                 <asp:BoundField DataField="lw_crf_3a_3" HeaderText="Time of Visit" />
                 <asp:BoundField DataField="lw_crf_3a_18" HeaderText="Randomization-ID" />
                 <asp:BoundField DataField="randomization_id" HeaderText="Correct Randomization-ID" />
-                <asp:BoundField DataField="lw_crf_3a_19" HeaderText="Form ARM" />
+                <asp:BoundField DataField="lw_crf_3a_19" HeaderText="Form3a ARM" />
+                <asp:BoundField DataField="lw_crf3c_28" HeaderText="Form3c ARM" />
                 <asp:BoundField DataField="treatment" HeaderText="Correct ARM" />
             </Columns>
         </asp:GridView>
