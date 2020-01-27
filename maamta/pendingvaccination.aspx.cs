@@ -196,6 +196,31 @@ namespace maamta
                     TableCell cell = e.Row.Cells[15];
                     cell.BackColor = System.Drawing.Color.FromName("#636e72");
                 }
+
+            // Pending Study_ID Red Color Indicator:
+                if (e.Row.Cells[9].Text != "&nbsp;" && e.Row.Cells[16].Text == "&nbsp;")
+                {
+                    TableCell cell0 = e.Row.Cells[1];
+                    cell0.BackColor = System.Drawing.Color.FromName("#ff7675");
+
+                }
+                if (e.Row.Cells[11].Text != "&nbsp;" && e.Row.Cells[16].Text == "&nbsp;")
+                {
+                    TableCell cell0 = e.Row.Cells[1];
+                    cell0.BackColor = System.Drawing.Color.FromName("#ff7675");
+                }
+                if (e.Row.Cells[13].Text != "&nbsp;" && e.Row.Cells[16].Text == "&nbsp;")
+                {
+                    TableCell cell0 = e.Row.Cells[1];
+                    cell0.BackColor = System.Drawing.Color.FromName("#ff7675");
+                }
+                if (e.Row.Cells[15].Text != "&nbsp;" && e.Row.Cells[16].Text == "&nbsp;")
+                {
+                    TableCell cell0 = e.Row.Cells[1];
+                    cell0.BackColor = System.Drawing.Color.FromName("#ff7675");
+                }
+
+            
             }
         }
 

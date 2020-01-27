@@ -168,6 +168,7 @@
                 <asp:BoundField DataField="Pending_Greater_10_Weeks" HeaderText="Pending_Greater_10_Weeks" />
                 <asp:BoundField DataField="Done_Greater_14_Weeks" HeaderText="Done_Greater_14_Weeks" />
                 <asp:BoundField DataField="Pending_Greater_14_Weeks" HeaderText="Pending_Greater_14_Weeks" />
+                    <asp:BoundField DataField="dod" HeaderText="dod" />
             </Columns>
         </asp:GridView>
     </div>
