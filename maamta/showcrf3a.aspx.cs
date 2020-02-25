@@ -352,7 +352,10 @@ namespace maamta
             {
                 con.Open();
                 MySqlCommand cmd;
-                cmd = new MySqlCommand("select c.assis_id as q1,a.lw_crf_3a_2 as q2,a.lw_crf_3a_3 as q3,a.lw_crf_3a_4 as q4,(a.lw_crf_3a_14+1)as q5, a.lw_crf_3a_15 as q6,a.lw_crf_3a_16 as q7,a.lw_crf_3a_18 as q8, 			(CASE    WHEN a.lw_crf_3a_19 like '%a%' THEN '44'    WHEN a.lw_crf_3a_19 like '%b%' THEN '55'    WHEN a.lw_crf_3a_19 like '%c%' THEN '66' END)  as q9					,a.lw_crf_3a_20 as q10,a.lw_crf_3a_22 as q11,a.lw_crf_3a_25 as q12  from form_crf_3a as a inner join pw as c on a.assis_id=c.id", con);
+
+                cmd = new MySqlCommand("select c.assis_id as q1,a.lw_crf_3a_2 as q2,a.lw_crf_3a_3 as q3,a.lw_crf_3a_4 as q4,(a.lw_crf_3a_14+1)as q5, a.lw_crf_3a_15 as q6,a.lw_crf_3a_16 as q7,a.lw_crf_3a_18 as q8, 			(CASE    WHEN a.lw_crf_3a_19 like '%a%' THEN '44'    WHEN a.lw_crf_3a_19 like '%b%' THEN '55'    WHEN a.lw_crf_3a_19 like '%c%' THEN '66' END)  as q9					,a.lw_crf_3a_25 as q12  from form_crf_3a as a inner join pw as c on a.assis_id=c.id", con);
+
+                //cmd = new MySqlCommand("select c.assis_id as q1,a.lw_crf_3a_2 as q2,a.lw_crf_3a_3 as q3,a.lw_crf_3a_4 as q4,(a.lw_crf_3a_14+1)as q5, a.lw_crf_3a_15 as q6,a.lw_crf_3a_16 as q7,a.lw_crf_3a_18 as q8, 			(CASE    WHEN a.lw_crf_3a_19 like '%a%' THEN '44'    WHEN a.lw_crf_3a_19 like '%b%' THEN '55'    WHEN a.lw_crf_3a_19 like '%c%' THEN '66' END)  as q9					,a.lw_crf_3a_20 as q10,a.lw_crf_3a_22 as q11,a.lw_crf_3a_25 as q12  from form_crf_3a as a inner join pw as c on a.assis_id=c.id", con);
                 MySqlDataAdapter sda = new MySqlDataAdapter();
                 {
                     cmd.Connection = con;

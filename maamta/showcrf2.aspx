@@ -180,6 +180,7 @@
                     <asp:BoundField DataField="lw_crf2_37" HeaderText="lw_crf2_37" />
                     <asp:BoundField DataField="lw_crf2_38_a" HeaderText="lw_crf2_38_a" />
                     <asp:BoundField DataField="lw_crf2_38_b" HeaderText="lw_crf2_38_b" />
+                    <asp:BoundField DataField="lw_crf2_38_b_oth_1" HeaderText="lw_crf2_38_b_oth_1" />
                     <asp:BoundField DataField="lw_crf2_39" HeaderText="lw_crf2_39" />
                     <asp:BoundField DataField="lw_crf2_40" HeaderText="lw_crf2_40" />
                     <asp:BoundField DataField="lw_crf2_41_a" HeaderText="lw_crf2_41_a" />
@@ -188,6 +189,7 @@
                     <asp:BoundField DataField="lw_crf2_41_d" HeaderText="lw_crf2_41_d" />
                     <asp:BoundField DataField="lw_crf2_41_e" HeaderText="lw_crf2_41_e" />
                     <asp:BoundField DataField="lw_crf2_41_f" HeaderText="lw_crf2_41_f" />
+                    <asp:BoundField DataField="lw_crf2_41_f_oth_1" HeaderText="lw_crf2_41_f_oth_1" />
                     <asp:BoundField DataField="lw_crf2_42" HeaderText="lw_crf2_42" />
                     <asp:BoundField DataField="lw_crf2_43" HeaderText="lw_crf2_43" />
                     <asp:BoundField DataField="" HeaderText="Q44_sum" />
@@ -278,6 +280,7 @@
                     <asp:BoundField DataField="lw_crf2_37" HeaderText="lw_crf2_37" />
                     <asp:BoundField DataField="lw_crf2_38_a" HeaderText="lw_crf2_38_a" />
                     <asp:BoundField DataField="lw_crf2_38_b" HeaderText="lw_crf2_38_b" />
+                    <asp:BoundField DataField="lw_crf2_38_b_oth_1" HeaderText="lw_crf2_38_b_oth_1" />
                     <asp:BoundField DataField="lw_crf2_39" HeaderText="lw_crf2_39" />
                     <asp:BoundField DataField="lw_crf2_40" HeaderText="lw_crf2_40" />
                     <asp:BoundField DataField="lw_crf2_41_a" HeaderText="lw_crf2_41_a" />
@@ -286,6 +289,7 @@
                     <asp:BoundField DataField="lw_crf2_41_d" HeaderText="lw_crf2_41_d" />
                     <asp:BoundField DataField="lw_crf2_41_e" HeaderText="lw_crf2_41_e" />
                     <asp:BoundField DataField="lw_crf2_41_f" HeaderText="lw_crf2_41_f" />
+                    <asp:BoundField DataField="lw_crf2_41_f_oth_1" HeaderText="lw_crf2_41_f_oth_1" />
                     <asp:BoundField DataField="lw_crf2_42" HeaderText="lw_crf2_42" />
                     <asp:BoundField DataField="lw_crf2_43" HeaderText="lw_crf2_43" />
                     <asp:BoundField DataField="" HeaderText="Q44_sum" />

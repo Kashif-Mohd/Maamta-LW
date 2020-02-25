@@ -61,6 +61,16 @@
         </div>
         <hr style="border-top: 1px solid #ccc; background: transparent; margin-top: -3px">
 
+                <div id="divExportButton" runat="server" style="text-align: right; margin-top: -17px">
+            <button type="button" id="btnBMGF" class="btn btn-success" runat="server" style="height: 38px" onserverclick="btnBMGF_Click">
+                CRF4a (BMGF)  &nbsp<span class="glyphicon glyphicon-export"></span>
+            </button>
+            <button type="button" id="btnBMGF_Details" class="btn btn-success" runat="server" style="height: 38px" onserverclick="btnBMGF_Details_Click">
+                CRF4a Details (BMGF) &nbsp<span class="glyphicon glyphicon-export"></span>
+            </button>
+
+        </div>
+
 
 
 
@@ -181,6 +191,16 @@
 
 
 
+                        
+            <%--For BMGF Export --%>
+            <asp:GridView ID="GridViewBMFG" runat="server" CssClass="footable"  ForeColor="#333333" AutoGenerateColumns="true">
+               
+            </asp:GridView>
+            
+            <%--For BMGF Export --%>
+            <asp:GridView ID="GridViewBMFG_Details" runat="server" CssClass="footable"  ForeColor="#333333" AutoGenerateColumns="true">
+               
+            </asp:GridView>
 
 
 

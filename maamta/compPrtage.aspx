@@ -379,8 +379,6 @@
                         <asp:BoundField DataField="woman_nm" HeaderText="Woman Name" />
                         <asp:BoundField DataField="husband_nm" HeaderText="Husband Name" />
                         <asp:BoundField DataField="ARM" HeaderText="ARM" />
-                        <asp:BoundField DataField="total_Followups" HeaderText="Total Followups, a/c to Current Date" />
-                        <asp:BoundField DataField="total_Sunday" HeaderText="Excluded Sunday" />
                         <asp:BoundField DataField="CRF5a_Attempt" HeaderText="CRF5a Attempt" />
                         <asp:BoundField DataField="CRF5a_Complete" HeaderText="CRF5a Complete" />
                         <asp:BoundField DataField="Cumulative" HeaderText="Cumulative Maamta Compliance" />
@@ -417,8 +415,6 @@
                         <asp:BoundField DataField="woman_nm" HeaderText="Woman Name" />
                         <asp:BoundField DataField="husband_nm" HeaderText="Husband Name" />
                         <asp:BoundField DataField="ARM" HeaderText="ARM" />
-                        <asp:BoundField DataField="total_Followups" HeaderText="Total Followups, a/c to Current Date" />
-                        <asp:BoundField DataField="total_Sunday" HeaderText="Excluded Sunday" />
                         <asp:BoundField DataField="CRF5a_Attempt" HeaderText="CRF5a Attempt" />
                         <asp:BoundField DataField="CRF5a_Complete" HeaderText="CRF5a Complete" />
                         <asp:BoundField DataField="Cumulative" HeaderText="Cumulative Maamta Compliance" />

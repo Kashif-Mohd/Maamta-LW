@@ -46,3 +46,4 @@ C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\bin\MySql.Fa
 C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\bin\MySql.Data.Entity.EF6.xml
 C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\obj\Debug\maamta.dll
 C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\obj\Debug\maamta.pdb
+C:\Users\FA0421\Documents\Visual Studio 2012\Projects\maamta\maamta\obj\Debug\maamta.csprojResolveAssemblyReference.cache

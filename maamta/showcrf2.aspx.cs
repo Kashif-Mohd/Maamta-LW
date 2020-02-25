@@ -311,78 +311,78 @@ namespace maamta
                 //Q44 (Condition-1)
                 if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[24].Text != "&nbsp;" && Convert.ToInt32(e.Row.Cells[24].Text) < 168)
                 {
-                    e.Row.Cells[45].Text = "True";
+                    e.Row.Cells[47].Text = "True";
                     q44++;
                 }
                 //Q44 (Condition-2)
                 if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[25].Text != "&nbsp;" && float.Parse(e.Row.Cells[25].Text) < 23)
                 {
-                    e.Row.Cells[46].Text = "True";
+                    e.Row.Cells[48].Text = "True";
                     q44++;
                 }
                 //Q44 (Condition-3)
                 if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[28].Text != "&nbsp;" && Convert.ToInt32(e.Row.Cells[28].Text) >= 1500)
                 {
-                    e.Row.Cells[47].Text = "True";
+                    e.Row.Cells[49].Text = "True";
                     q44++;
                 }
                 //Q44 (Condition-4)
                 if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[30].Text != "&nbsp;" && e.Row.Cells[30].Text == "1")
                 {
-                    e.Row.Cells[48].Text = "True";
+                    e.Row.Cells[50].Text = "True";
                     q44++;
                 }
                 //Q44 (Condition-5)
                 if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[31].Text != "&nbsp;" && e.Row.Cells[31].Text == "1")
                 {
-                    e.Row.Cells[49].Text = "True";
+                    e.Row.Cells[51].Text = "True";
                     q44++;
                 }
                 //Q44 (Condition-6): [for Sum Q44]
                 if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[32].Text != "&nbsp;" && e.Row.Cells[32].Text == "2" && e.Row.Cells[33].Text == "2")
                 {
-                    e.Row.Cells[50].Text = "True";
+                    e.Row.Cells[52].Text = "True";
                     q44++;
                 }
 
 
                 //Q44 (Condition-7):
-                if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[34].Text != "&nbsp;" && e.Row.Cells[34].Text == "2")
-                {
-                    e.Row.Cells[51].Text = "True";
-                    q44++;
-                }
-                //Q44 (Condition-8):
-                if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[35].Text != "&nbsp;" && e.Row.Cells[35].Text == "1")
-                {
-                    e.Row.Cells[52].Text = "True";
-                    q44++;
-                }
-
-                //Q44 (Condition-9): [for Sum Q44]
-                if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[36].Text != "&nbsp;" && e.Row.Cells[36].Text == "2" && e.Row.Cells[37].Text == "2" && e.Row.Cells[38].Text == "2" && e.Row.Cells[39].Text == "2" && e.Row.Cells[40].Text == "2" && e.Row.Cells[41].Text == "2")
+                if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[35].Text != "&nbsp;" && e.Row.Cells[35].Text == "2")
                 {
                     e.Row.Cells[53].Text = "True";
                     q44++;
                 }
-
-                //Q44 (Condition-10): 
-                if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[42].Text != "&nbsp;" && e.Row.Cells[42].Text == "2")
+                //Q44 (Condition-8):
+                if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[36].Text != "&nbsp;" && e.Row.Cells[36].Text == "1")
                 {
                     e.Row.Cells[54].Text = "True";
                     q44++;
                 }
-                //Q44 (Condition-11): 
-                if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[43].Text != "&nbsp;" && e.Row.Cells[43].Text == "2")
+
+                //Q44 (Condition-9): [for Sum Q44]
+                if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[37].Text != "&nbsp;" && e.Row.Cells[37].Text == "2" && e.Row.Cells[38].Text == "2" && e.Row.Cells[39].Text == "2" && e.Row.Cells[40].Text == "2" && e.Row.Cells[41].Text == "2" && e.Row.Cells[42].Text == "2")
                 {
                     e.Row.Cells[55].Text = "True";
+                    q44++;
+                }
+
+                //Q44 (Condition-10): 
+                if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[44].Text != "&nbsp;" && e.Row.Cells[44].Text == "2")
+                {
+                    e.Row.Cells[56].Text = "True";
+                    q44++;
+                }
+                //Q44 (Condition-11): 
+                if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1" && e.Row.Cells[45].Text != "&nbsp;" && e.Row.Cells[45].Text == "2")
+                {
+                    e.Row.Cells[57].Text = "True";
                     q44++;
                 }
 
                 //Q44 (Sum up): 
                 if (e.Row.Cells[14].Text == "1" && e.Row.Cells[21].Text == "1")
                 {
-                    e.Row.Cells[44].Text = Convert.ToString(q44);
+                    e.Row.Cells[46].Text = Convert.ToString(q44);
                 }
 
 

@@ -181,6 +181,7 @@
                     <asp:BoundField DataField="lw_crf4b_21x" HeaderText="lw_crf4b_21x" />
                     <asp:BoundField DataField="lw_crf4b_21y" HeaderText="lw_crf4b_21y" />
                     <asp:BoundField DataField="lw_crf4b_21z" HeaderText="lw_crf4b_21z" />
+                    <asp:BoundField DataField="lw_crf4b_21z_oth_1" HeaderText="lw_crf4b_21z_oth_1" />
                     <asp:BoundField DataField="lw_crf4b_22" HeaderText="lw_crf4b_22" />
                     <asp:BoundField DataField="lw_crf4b_23a" HeaderText="lw_crf4b_23a" />
                     <asp:BoundField DataField="lw_crf4b_23b" HeaderText="lw_crf4b_23b" />
@@ -189,6 +190,7 @@
                     <asp:BoundField DataField="lw_crf4b_23e" HeaderText="lw_crf4b_23e" />
                     <asp:BoundField DataField="lw_crf4b_23f" HeaderText="lw_crf4b_23f" />
                     <asp:BoundField DataField="lw_crf4b_23g" HeaderText="lw_crf4b_23g" />
+                    <asp:BoundField DataField="lw_crf4b_23g_oth_1" HeaderText="lw_crf4b_23g_oth_1" />
                     <asp:BoundField DataField="lw_crf4b_23h" HeaderText="lw_crf4b_23h" />
                     <asp:BoundField DataField="lw_crf4b_23i" HeaderText="lw_crf4b_23i" />
                     <asp:BoundField DataField="lw_crf4b_23j" HeaderText="lw_crf4b_23j" />
@@ -205,6 +207,7 @@
                     <asp:BoundField DataField="lw_crf4b_25g" HeaderText="lw_crf4b_25g" />
                     <asp:BoundField DataField="lw_crf4b_25h" HeaderText="lw_crf4b_25h" />
                     <asp:BoundField DataField="lw_crf4b_25i" HeaderText="lw_crf4b_25i" />
+                    <asp:BoundField DataField="lw_crf4b_25i_oth_1" HeaderText="lw_crf4b_25i_oth_1" />
                     <asp:BoundField DataField="lw_crf4b_26" HeaderText="lw_crf4b_26" />
                     <asp:BoundField DataField="lw_crf4b_27a" HeaderText="lw_crf4b_27a" />
                     <asp:BoundField DataField="lw_crf4b_27b" HeaderText="lw_crf4b_27b" />
@@ -262,6 +265,7 @@
                     <asp:BoundField DataField="lw_crf4b_50n" HeaderText="lw_crf4b_50n" />
                     <asp:BoundField DataField="lw_crf4b_50o" HeaderText="lw_crf4b_50o" />
                     <asp:BoundField DataField="lw_crf4b_50p" HeaderText="lw_crf4b_50p" />
+                    <asp:BoundField DataField="lw_crf4b_50p_oth_1" HeaderText="lw_crf4b_50p_oth_1" />
                     <asp:BoundField DataField="lw_crf4b_51" HeaderText="lw_crf4b_51" />
                     <asp:BoundField DataField="lw_crf4b_52" HeaderText="lw_crf4b_52" />
                     <asp:BoundField DataField="lw_crf4b_53" HeaderText="lw_crf4b_53" />
@@ -278,6 +282,7 @@
                     <asp:BoundField DataField="lw_crf4b_55j" HeaderText="lw_crf4b_55j" />
                     <asp:BoundField DataField="lw_crf4b_55k" HeaderText="lw_crf4b_55k" />
                     <asp:BoundField DataField="lw_crf4b_55l" HeaderText="lw_crf4b_55l" />
+                    <asp:BoundField DataField="lw_crf4b_55l_oth_1" HeaderText="lw_crf4b_55l_oth_1" />
                     <asp:BoundField DataField="lw_crf4b_56" HeaderText="lw_crf4b_56" />
                     <asp:BoundField DataField="name" HeaderText="name" />
                 </Columns>
@@ -307,6 +312,7 @@
                         </ItemTemplate>
                         <ItemStyle Width="2%" />
                     </asp:TemplateField>
+                    <asp:BoundField DataField="form_crf_4b_id" HeaderText="form_crf_4b_id" />
                     <asp:BoundField DataField="followup_num" HeaderText="Followups Number" />
                     <asp:BoundField DataField="study_code" HeaderText="Study ID" />
                     <asp:BoundField DataField="Day" HeaderText="Day" />
@@ -350,6 +356,7 @@
                     <asp:BoundField DataField="lw_crf4b_21x" HeaderText="lw_crf4b_21x" />
                     <asp:BoundField DataField="lw_crf4b_21y" HeaderText="lw_crf4b_21y" />
                     <asp:BoundField DataField="lw_crf4b_21z" HeaderText="lw_crf4b_21z" />
+                    <asp:BoundField DataField="lw_crf4b_21z_oth_1" HeaderText="lw_crf4b_21z_oth_1" />
                     <asp:BoundField DataField="lw_crf4b_22" HeaderText="lw_crf4b_22" />
                     <asp:BoundField DataField="lw_crf4b_23a" HeaderText="lw_crf4b_23a" />
                     <asp:BoundField DataField="lw_crf4b_23b" HeaderText="lw_crf4b_23b" />
@@ -358,6 +365,7 @@
                     <asp:BoundField DataField="lw_crf4b_23e" HeaderText="lw_crf4b_23e" />
                     <asp:BoundField DataField="lw_crf4b_23f" HeaderText="lw_crf4b_23f" />
                     <asp:BoundField DataField="lw_crf4b_23g" HeaderText="lw_crf4b_23g" />
+                    <asp:BoundField DataField="lw_crf4b_23g_oth_1" HeaderText="lw_crf4b_23g_oth_1" />
                     <asp:BoundField DataField="lw_crf4b_23h" HeaderText="lw_crf4b_23h" />
                     <asp:BoundField DataField="lw_crf4b_23i" HeaderText="lw_crf4b_23i" />
                     <asp:BoundField DataField="lw_crf4b_23j" HeaderText="lw_crf4b_23j" />
@@ -374,6 +382,7 @@
                     <asp:BoundField DataField="lw_crf4b_25g" HeaderText="lw_crf4b_25g" />
                     <asp:BoundField DataField="lw_crf4b_25h" HeaderText="lw_crf4b_25h" />
                     <asp:BoundField DataField="lw_crf4b_25i" HeaderText="lw_crf4b_25i" />
+                    <asp:BoundField DataField="lw_crf4b_25i_oth_1" HeaderText="lw_crf4b_25i_oth_1" />
                     <asp:BoundField DataField="lw_crf4b_26" HeaderText="lw_crf4b_26" />
                     <asp:BoundField DataField="lw_crf4b_27a" HeaderText="lw_crf4b_27a" />
                     <asp:BoundField DataField="lw_crf4b_27b" HeaderText="lw_crf4b_27b" />
@@ -431,6 +440,7 @@
                     <asp:BoundField DataField="lw_crf4b_50n" HeaderText="lw_crf4b_50n" />
                     <asp:BoundField DataField="lw_crf4b_50o" HeaderText="lw_crf4b_50o" />
                     <asp:BoundField DataField="lw_crf4b_50p" HeaderText="lw_crf4b_50p" />
+                    <asp:BoundField DataField="lw_crf4b_50p_oth_1" HeaderText="lw_crf4b_50p_oth_1" />
                     <asp:BoundField DataField="lw_crf4b_51" HeaderText="lw_crf4b_51" />
                     <asp:BoundField DataField="lw_crf4b_52" HeaderText="lw_crf4b_52" />
                     <asp:BoundField DataField="lw_crf4b_53" HeaderText="lw_crf4b_53" />
@@ -447,9 +457,9 @@
                     <asp:BoundField DataField="lw_crf4b_55j" HeaderText="lw_crf4b_55j" />
                     <asp:BoundField DataField="lw_crf4b_55k" HeaderText="lw_crf4b_55k" />
                     <asp:BoundField DataField="lw_crf4b_55l" HeaderText="lw_crf4b_55l" />
+                    <asp:BoundField DataField="lw_crf4b_55l_oth_1" HeaderText="lw_crf4b_55l_oth_1" />
                     <asp:BoundField DataField="lw_crf4b_56" HeaderText="lw_crf4b_56" />
                     <asp:BoundField DataField="name" HeaderText="name" />
-                    <asp:BoundField DataField="form_crf_4b_id" HeaderText="form_crf_4b_id" />
                 </Columns>
 
             </asp:GridView>
