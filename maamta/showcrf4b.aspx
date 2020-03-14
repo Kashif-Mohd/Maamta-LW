@@ -134,10 +134,10 @@
                         </ItemTemplate>
                         <ItemStyle Width="2%" />
                     </asp:TemplateField>
-                    <asp:BoundField DataField="followup_num" HeaderText="Followups Number" />
+                    <asp:BoundField DataField="Followups Number" HeaderText="Followups Number" />
                     <asp:TemplateField HeaderText="Study ID">
                         <ItemTemplate>
-                            <asp:LinkButton ID="LinkStudy" OnClick="Link_Study" Text='<%#Eval("study_code") %>' runat="server" ToolTip="Form Detail" CommandArgument='<%#Eval("form_crf_4b_id")+","+ Eval("study_code")%>'></asp:LinkButton>
+                            <asp:LinkButton ID="LinkStudy" OnClick="Link_Study" Text='<%#Eval("Study ID") %>' runat="server" ToolTip="Form Detail" CommandArgument='<%#Eval("form_crf_4b_id")+","+ Eval("Study ID")%>'></asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:BoundField DataField="Day" HeaderText="Day" />
@@ -313,8 +313,8 @@
                         <ItemStyle Width="2%" />
                     </asp:TemplateField>
                     <asp:BoundField DataField="form_crf_4b_id" HeaderText="form_crf_4b_id" />
-                    <asp:BoundField DataField="followup_num" HeaderText="Followups Number" />
-                    <asp:BoundField DataField="study_code" HeaderText="Study ID" />
+                    <asp:BoundField DataField="Followups Number" HeaderText="Followups Number" />
+                    <asp:BoundField DataField="Study ID" HeaderText="Study ID" />
                     <asp:BoundField DataField="Day" HeaderText="Day" />
                     <asp:BoundField DataField="lw_crf4b_2" HeaderText="lw_crf4b_2" />
                     <asp:BoundField DataField="lw_crf4b_3" HeaderText="lw_crf4b_3" />

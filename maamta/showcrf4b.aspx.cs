@@ -95,7 +95,7 @@ namespace maamta
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
                         cmd.Connection = con;
-                        cmd.CommandTimeout = 999999;
+                        cmd.CommandTimeout = 9999999;
                         cmd.CommandType = CommandType.Text;
                         sda.SelectCommand = cmd;
 
@@ -116,7 +116,7 @@ namespace maamta
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
                         cmd.Connection = con;
-                        cmd.CommandTimeout = 999999;
+                        cmd.CommandTimeout = 9999999;
                         cmd.CommandType = CommandType.Text;
                         sda.SelectCommand = cmd;
                         DataTable dt = new DataTable();
@@ -154,6 +154,7 @@ namespace maamta
                 System.IO.StringWriter stringWrite = new System.IO.StringWriter();
                 System.Web.UI.HtmlTextWriter htmlWrite =
                 new HtmlTextWriter(stringWrite);
+                Response.Cache.SetCacheability(HttpCacheability.NoCache);
                 GridView2.AllowPaging = false;
                 ExcelExportMessage();
                 GridView2.CaptionAlign = TableCaptionAlign.Top;
@@ -217,7 +218,7 @@ namespace maamta
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
                         cmd.Connection = con;
-                        cmd.CommandTimeout = 999999;
+                        cmd.CommandTimeout = 9999999;
                         cmd.CommandType = CommandType.Text;
                         sda.SelectCommand = cmd;
                         DataTable dt = new DataTable();
@@ -237,7 +238,7 @@ namespace maamta
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
                         cmd.Connection = con;
-                        cmd.CommandTimeout = 999999;
+                        cmd.CommandTimeout = 9999999;
                         cmd.CommandType = CommandType.Text;
                         sda.SelectCommand = cmd;
                         DataTable dt = new DataTable();
@@ -265,35 +266,35 @@ namespace maamta
         {
             if (e.Row.RowType == DataControlRowType.DataRow)
             {
-                if (e.Row.Cells[16].Text.Length == 1)
-                {
-                    e.Row.Cells[16].Text = "";
-                }
+                //if (e.Row.Cells[16].Text.Length == 1)
+                //{
+                //    e.Row.Cells[16].Text = "";
+                //}
 
-                if (e.Row.Cells[15].Text == "1")
-                {
-                    e.Row.Cells[15].Text = "Complete";
-                }
-                else if (e.Row.Cells[15].Text == "2")
-                {
-                    e.Row.Cells[15].Text = "Woman/Baby not present";
-                }
-                else if (e.Row.Cells[15].Text == "3")
-                {
-                    e.Row.Cells[15].Text = "Refused";
-                }
-                else if (e.Row.Cells[15].Text == "4")
-                {
-                    e.Row.Cells[15].Text = "Household Locked";
-                }
-                else if (e.Row.Cells[15].Text == "5")
-                {
-                    e.Row.Cells[15].Text = "Permanent migration";
-                }
-                else if (e.Row.Cells[15].Text == "6")
-                {
-                    e.Row.Cells[15].Text = "Baby is adopted by someone else";
-                }
+                //if (e.Row.Cells[15].Text == "1")
+                //{
+                //    e.Row.Cells[15].Text = "Complete";
+                //}
+                //else if (e.Row.Cells[15].Text == "2")
+                //{
+                //    e.Row.Cells[15].Text = "Woman/Baby not present";
+                //}
+                //else if (e.Row.Cells[15].Text == "3")
+                //{
+                //    e.Row.Cells[15].Text = "Refused";
+                //}
+                //else if (e.Row.Cells[15].Text == "4")
+                //{
+                //    e.Row.Cells[15].Text = "Household Locked";
+                //}
+                //else if (e.Row.Cells[15].Text == "5")
+                //{
+                //    e.Row.Cells[15].Text = "Permanent migration";
+                //}
+                //else if (e.Row.Cells[15].Text == "6")
+                //{
+                //    e.Row.Cells[15].Text = "Baby is adopted by someone else";
+                //}
             }
         }
 
@@ -354,6 +355,8 @@ namespace maamta
                 MySqlDataAdapter sda = new MySqlDataAdapter();
                 {
                     cmd.Connection = con;
+                    cmd.CommandTimeout = 9999999;
+                    cmd.CommandType = CommandType.Text;
                     sda.SelectCommand = cmd;
                     DataTable dt = new DataTable();
                     {
@@ -389,6 +392,7 @@ namespace maamta
                 System.IO.StringWriter stringWrite = new System.IO.StringWriter();
                 System.Web.UI.HtmlTextWriter htmlWrite =
                 new HtmlTextWriter(stringWrite);
+                Response.Cache.SetCacheability(HttpCacheability.NoCache);
                 GridViewBMFG.AllowPaging = false;
                 ExcelExportMessage();
                 GridViewBMFG.CaptionAlign = TableCaptionAlign.Top;
