@@ -195,8 +195,8 @@
                         </ItemTemplate>
                         <ItemStyle Width="2%" />
                     </asp:TemplateField>
-                    <asp:BoundField DataField="study_code" HeaderText="Study Code" />
-                    <asp:BoundField DataField="followup_num" HeaderText="Followup Number" />
+                    <asp:BoundField DataField="Study ID" HeaderText="Study ID" />
+                    <asp:BoundField DataField="Followups Number" HeaderText="Followup Number" />
                     <asp:BoundField DataField="Date_of_Followup" HeaderText="Date of Followup" />
                     <asp:BoundField DataField="dssid" HeaderText="DSSID" />
                     <asp:BoundField DataField="Woman_Name" HeaderText="Woman Name" />
@@ -232,8 +232,8 @@
                         </ItemTemplate>
                         <ItemStyle Width="2%" />
                     </asp:TemplateField>
-                    <asp:BoundField DataField="study_code" HeaderText="Study Code" />
-                    <asp:BoundField DataField="followup_num" HeaderText="Followup Number" />
+                    <asp:BoundField DataField="Study ID" HeaderText="Study ID" />
+                    <asp:BoundField DataField="Followups Number" HeaderText="Followup Number" />
                     <asp:BoundField DataField="Date_of_Followup" HeaderText="Date of Followup" />
                     <asp:BoundField DataField="dssid" HeaderText="DSSID" />
                     <asp:BoundField DataField="Woman_Name" HeaderText="Woman Name" />
