@@ -24,6 +24,8 @@ namespace maamta
                     Session["WebForm"] = "randDuplicate";
                     lbeDateFromTo.Text = "(search by DSSID: '" + Convert.ToString(Session["RANDdssid"]) + "')";
                     txtdssid.Text = Convert.ToString(Session["RANDdssid"]);
+
+                    
                     //Disable Calendar:
                     txtCalndrDate.Enabled = false;
                     txtCalndrDate1.Enabled = false;
@@ -39,8 +41,15 @@ namespace maamta
                     divBackButton.Visible = false;
                     DateFormatPageLoad();
                     Session["WebForm"] = "showcrf2";
+                    //Disable Calendar:
+                    txtCalndrDate.Enabled = true;
+                    txtCalndrDate1.Enabled = true;
+                    CheckBox1.Checked = false;
+
+
                     ShowData();
                     txtdssid.Focus();
+
                 }
             }
         }

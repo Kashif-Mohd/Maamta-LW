@@ -22,6 +22,11 @@ namespace maamta
             {
                 DateFormatPageLoad();
                 Session["WebForm"] = "showcrf3b";
+
+                txtCalndrDate.Enabled = true;
+                txtCalndrDate1.Enabled = true;
+                CheckBox1.Checked = false;
+
                 ShowData();
                 txtdssid.Focus();
 

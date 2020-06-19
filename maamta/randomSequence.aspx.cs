@@ -59,7 +59,7 @@ namespace maamta
                 }
                 else
                 {
-                    cmd = new MySqlCommand("SELECT a.form_crf_3a_id,a.study_id,a.lw_crf_3a_2, a.lw_crf_3a_3,a.lw_crf_3a_18,a.lw_crf_3a_19,c.lw_crf3c_28,a.dssid,b.randomization_id,b.treatment FROM view_crf3a AS a LEFT JOIN lab_investigation AS b ON a.lw_crf_3a_18=b.randomization_id LEFT JOIN view_crf3c AS c ON c.study_code=a.study_id WHERE a.site='" + DropDownList1.SelectedValue + "' ORDER BY STR_TO_DATE(a.lw_crf_3a_2, '%d-%m-%Y'), STR_TO_DATE(a.lw_crf_3a_3,  '%H:%i')", con);
+                    cmd = new MySqlCommand("SELECT a.form_crf_3a_id,a.study_id,a.lw_crf_3a_2, a.lw_crf_3a_3,a.lw_crf_3a_18,a.lw_crf_3a_19,c.lw_crf3c_28,a.dssid,b.randomization_id,b.treatment FROM view_crf3a AS a LEFT JOIN lab_investigation AS b ON a.lw_crf_3a_18=b.randomization_id LEFT JOIN view_crf3c AS c ON c.study_code=a.study_id WHERE a.lw_crf_3a_18 like '%" + DropDownList1.SelectedValue + "%' ORDER BY STR_TO_DATE(a.lw_crf_3a_2, '%d-%m-%Y'), STR_TO_DATE(a.lw_crf_3a_3,  '%H:%i')", con);
                     //old before (23-Jan-2020)
 
                    // cmd = new MySqlCommand("select a.form_crf_3a_id,a.study_id,a.lw_crf_3a_2, a.lw_crf_3a_3,a.lw_crf_3a_18,a.lw_crf_3a_19,a.dssid,b.randomization_id,b.treatment from view_crf3a as a left join lab_investigation as b on a.lw_crf_3a_18=b.randomization_id where a.site='" + DropDownList1.SelectedValue + "' order by str_to_date(a.lw_crf_3a_2, '%d-%m-%Y'), STR_TO_DATE(a.lw_crf_3a_3,  '%H:%i')", con);
@@ -167,7 +167,7 @@ namespace maamta
                     con.Open();
                     MySqlCommand cmd;
 
-                    cmd = new MySqlCommand("SELECT a.form_crf_3a_id,a.site,a.study_id,a.lw_crf_3a_2, a.lw_crf_3a_3,a.lw_crf_3a_18,a.lw_crf_3a_19,c.lw_crf3c_28,a.dssid,b.randomization_id,b.treatment FROM view_crf3a AS a LEFT JOIN lab_investigation AS b ON a.lw_crf_3a_18=b.randomization_id LEFT JOIN view_crf3c AS c ON c.study_code=a.study_id WHERE a.site='" + DropDownList1.SelectedValue + "' ORDER BY STR_TO_DATE(a.lw_crf_3a_2, '%d-%m-%Y'), STR_TO_DATE(a.lw_crf_3a_3,  '%H:%i')", con);
+                    cmd = new MySqlCommand("SELECT a.form_crf_3a_id,a.site,a.study_id,a.lw_crf_3a_2, a.lw_crf_3a_3,a.lw_crf_3a_18,a.lw_crf_3a_19,c.lw_crf3c_28,a.dssid,b.randomization_id,b.treatment FROM view_crf3a AS a LEFT JOIN lab_investigation AS b ON a.lw_crf_3a_18=b.randomization_id LEFT JOIN view_crf3c AS c ON c.study_code=a.study_id WHERE a.lw_crf_3a_18 like '%" + DropDownList1.SelectedValue + "%'  ORDER BY STR_TO_DATE(a.lw_crf_3a_2, '%d-%m-%Y'), STR_TO_DATE(a.lw_crf_3a_3,  '%H:%i')", con);
 
                     //old before (01-Sept-2018)
                     //cmd = new MySqlCommand("select form_crf_3a_id,site,study_id,lw_crf_3a_2, lw_crf_3a_3,lw_crf_3a_18,dssid from view_crf3a where site='" + DropDownList1.SelectedValue + "' order by str_to_date(lw_crf_3a_2, '%d-%m-%Y'), STR_TO_DATE(lw_crf_3a_3,  '%H:%i')", con);

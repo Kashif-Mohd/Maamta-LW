@@ -83,7 +83,7 @@ namespace maamta
                     {
                         con.Open();
                         MySqlCommand cmd;
-                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code    where a.status!='1' and a.dssid like '%" + txtdssid.Text + "%' and str_to_date(a.date, '%d-%m-%Y') <= CURDATE() order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
+                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code    where a.status!='1' and a.dssid like '%" + txtdssid.Text + "%'  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
                         MySqlDataAdapter sda = new MySqlDataAdapter();
                         {
                             cmd.Connection = con;
@@ -101,7 +101,7 @@ namespace maamta
                     {
                         con.Open();
                         MySqlCommand cmd;
-                        cmd = new MySqlCommand("select * from view_followups5b  as a left join participant_status as b on  a.study_code=b.study_code     where a.site='" + DropDownList1.SelectedValue + "' and a.status!='1' and a.dssid like '%" + txtdssid.Text + "%' and str_to_date(date, '%d-%m-%Y') <= CURDATE() order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
+                        cmd = new MySqlCommand("select * from view_followups5b  as a left join participant_status as b on  a.study_code=b.study_code     where a.site='" + DropDownList1.SelectedValue + "' and a.status!='1' and a.dssid like '%" + txtdssid.Text + "%'  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
                         MySqlDataAdapter sda = new MySqlDataAdapter();
                         {
                             cmd.Connection = con;
@@ -123,7 +123,7 @@ namespace maamta
                     {
                         con.Open();
                         MySqlCommand cmd;
-                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code     where a.status!='1' and a.dssid like '%" + txtdssid.Text + "%' and str_to_date(a.date, '%d-%m-%Y') <= CURDATE() and (str_to_date(a.date, '%d-%m-%Y') between str_to_date('" + txtCalndrDate.Text + "', '%d-%m-%Y') and str_to_date('" + txtCalndrDate1.Text + "', '%d-%m-%Y'))  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
+                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code     where a.status!='1' and a.dssid like '%" + txtdssid.Text + "%'  and (str_to_date(a.date, '%d-%m-%Y') between str_to_date('" + txtCalndrDate.Text + "', '%d-%m-%Y') and str_to_date('" + txtCalndrDate1.Text + "', '%d-%m-%Y'))  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
                         MySqlDataAdapter sda = new MySqlDataAdapter();
                         {
                             cmd.Connection = con;
@@ -141,7 +141,7 @@ namespace maamta
                     {
                         con.Open();
                         MySqlCommand cmd;
-                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code     where a.site='" + DropDownList1.SelectedValue + "' and a.status!='1' and a.dssid like '%" + txtdssid.Text + "%' and str_to_date(a.date, '%d-%m-%Y') <= CURDATE()   and (str_to_date(a.date, '%d-%m-%Y') between str_to_date('" + txtCalndrDate.Text + "', '%d-%m-%Y') and str_to_date('" + txtCalndrDate1.Text + "', '%d-%m-%Y'))  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
+                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code     where a.site='" + DropDownList1.SelectedValue + "' and a.status!='1' and a.dssid like '%" + txtdssid.Text + "%'    and (str_to_date(a.date, '%d-%m-%Y') between str_to_date('" + txtCalndrDate.Text + "', '%d-%m-%Y') and str_to_date('" + txtCalndrDate1.Text + "', '%d-%m-%Y'))  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
                         MySqlDataAdapter sda = new MySqlDataAdapter();
                         {
                             cmd.Connection = con;
@@ -208,7 +208,7 @@ namespace maamta
                     {
                         con.Open();
                         MySqlCommand cmd;
-                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code    where a.status!='1' and a.dssid like '%" + txtdssid.Text + "%' and str_to_date(a.date, '%d-%m-%Y') <= CURDATE() order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
+                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code    where a.status!='1' and a.dssid like '%" + txtdssid.Text + "%'        order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
                         MySqlDataAdapter sda = new MySqlDataAdapter();
                         {
                             cmd.Connection = con;
@@ -226,7 +226,7 @@ namespace maamta
                     {
                         con.Open();
                         MySqlCommand cmd;
-                        cmd = new MySqlCommand("select * from view_followups5b  as a left join participant_status as b on  a.study_code=b.study_code     where a.site='" + DropDownList1.SelectedValue + "' and a.status!='1' and a.dssid like '%" + txtdssid.Text + "%' and str_to_date(date, '%d-%m-%Y') <= CURDATE() order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
+                        cmd = new MySqlCommand("select * from view_followups5b  as a left join participant_status as b on  a.study_code=b.study_code     where a.site='" + DropDownList1.SelectedValue + "' and a.status!='1' and a.dssid like '%" + txtdssid.Text + "%'  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
                         MySqlDataAdapter sda = new MySqlDataAdapter();
                         {
                             cmd.Connection = con;
@@ -248,7 +248,7 @@ namespace maamta
                     {
                         con.Open();
                         MySqlCommand cmd;
-                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code     where a.status!='1' and a.dssid like '%" + txtdssid.Text + "%' and str_to_date(a.date, '%d-%m-%Y') <= CURDATE() and (str_to_date(a.date, '%d-%m-%Y') between str_to_date('" + txtCalndrDate.Text + "', '%d-%m-%Y') and str_to_date('" + txtCalndrDate1.Text + "', '%d-%m-%Y'))  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
+                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code     where a.status!='1' and a.dssid like '%" + txtdssid.Text + "%'  and (str_to_date(a.date, '%d-%m-%Y') between str_to_date('" + txtCalndrDate.Text + "', '%d-%m-%Y') and str_to_date('" + txtCalndrDate1.Text + "', '%d-%m-%Y'))  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
                         MySqlDataAdapter sda = new MySqlDataAdapter();
                         {
                             cmd.Connection = con;
@@ -266,7 +266,7 @@ namespace maamta
                     {
                         con.Open();
                         MySqlCommand cmd;
-                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code     where a.site='" + DropDownList1.SelectedValue + "' and a.status!='1' and a.dssid like '%" + txtdssid.Text + "%' and str_to_date(a.date, '%d-%m-%Y') <= CURDATE()   and (str_to_date(a.date, '%d-%m-%Y') between str_to_date('" + txtCalndrDate.Text + "', '%d-%m-%Y') and str_to_date('" + txtCalndrDate1.Text + "', '%d-%m-%Y'))  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
+                        cmd = new MySqlCommand("select * from view_followups5b as a left join participant_status as b on  a.study_code=b.study_code     where a.site='" + DropDownList1.SelectedValue + "' and a.status!='1' and a.dssid like '%" + txtdssid.Text + "%'   and (str_to_date(a.date, '%d-%m-%Y') between str_to_date('" + txtCalndrDate.Text + "', '%d-%m-%Y') and str_to_date('" + txtCalndrDate1.Text + "', '%d-%m-%Y'))  order by str_to_date(a.date, '%d-%m-%Y'),a.study_code,a.age;", con);
                         MySqlDataAdapter sda = new MySqlDataAdapter();
                         {
                             cmd.Connection = con;

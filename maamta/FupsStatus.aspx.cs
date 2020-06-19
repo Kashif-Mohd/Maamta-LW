@@ -67,9 +67,9 @@ namespace maamta
                 }
                 else if (DropDownList1.SelectedValue == "4a_Done")
                 {
-                    cmd = new MySqlCommand("select c.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm, (select 	concat(ROUND(((sum(z.lw_crf5a_31)/sum(		if((z.lw_crf5a_29 is NULL || z.lw_crf5a_29 =''), (SELECT (DATEDIFF(str_to_date(z.lw_crf5a_02, '%d-%m-%Y'), str_to_date(y.lw_crf3c_2, '%d-%m-%Y')))*2 from form_crf_3c as y where y.study_id=z.study_id), z.lw_crf5a_29)				))*100),1),'%')  from form_crf_5a as z where z.study_id=c.study_id) as Cumulative			from view_followups4a as a  left join studies as c on c.study_code=a.study_code left join form_crf_3a as d on d.assis_id=a.id where a.followups='47' and a.status=1  order by c.study_code;", con);
+                    cmd = new MySqlCommand("select c.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm, (select 	concat(ROUND(((sum(z.lw_crf5a_31)/sum(		if((z.lw_crf5a_29 is NULL || z.lw_crf5a_29 =''), (SELECT (DATEDIFF(str_to_date(z.lw_crf5a_02, '%d-%m-%Y'), str_to_date(y.lw_crf3c_2, '%d-%m-%Y')))*2 from form_crf_3c as y where y.study_id=z.study_id), z.lw_crf5a_29)				))*100),1),'%')  from form_crf_5a as z where z.study_id=c.study_id) as Cumulative, (SELECT z.date_of_attempt FROM form_crf_4a AS z WHERE z.followup_num='47' AND z.study_id=c.study_id) AS last_DOV			from view_followups4a as a  left join studies as c on c.study_code=a.study_code left join form_crf_3a as d on d.assis_id=a.id where a.followups='47' and a.status=1  order by c.study_code;", con);
+                    // cmd = new MySqlCommand("select c.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm, (select 	concat(ROUND(((sum(z.lw_crf5a_31)/sum(		if((z.lw_crf5a_29 is NULL || z.lw_crf5a_29 =''), (SELECT (DATEDIFF(str_to_date(z.lw_crf5a_02, '%d-%m-%Y'), str_to_date(y.lw_crf3c_2, '%d-%m-%Y')))*2 from form_crf_3c as y where y.study_id=z.study_id), z.lw_crf5a_29)				))*100),1),'%')  from form_crf_5a as z where z.study_id=c.study_id) as Cumulative			from view_followups4a as a  left join studies as c on c.study_code=a.study_code left join form_crf_3a as d on d.assis_id=a.id where a.followups='47' and a.status=1  order by c.study_code;", con);
                   
-                    //cmd = new MySqlCommand("select a.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm	from view_followups4a as a where a.followups='47' and a.status=1  order by a.site,a.study_code;", con);
 
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
@@ -86,7 +86,9 @@ namespace maamta
                 }
                 else if (DropDownList1.SelectedValue == "4a_Pending")
                 {
-                    cmd = new MySqlCommand("select 	a.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm,'Cumulative' from view_followups4a as a where a.followups='47' and a.status=3 order by a.site,a.study_code;", con);
+                    cmd = new MySqlCommand("SELECT 	a.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm,'Cumulative',	(SELECT CONCAT(   MAX(STR_TO_DATE(z.date_of_attempt,'%d-%m-%Y')) ,', F/ups: ', MAX(z.followup_num)) AS last_dov FROM form_crf_4a AS z WHERE z.study_id=c.study_id  GROUP BY z.study_id) AS last_DOV 	FROM view_followups4a AS a LEFT JOIN studies AS c ON c.study_code=a.study_code WHERE a.followups='47' AND a.status=3 ORDER BY a.site,a.study_code;", con);
+
+                   // cmd = new MySqlCommand("select 	a.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm,'Cumulative' from view_followups4a as a where a.followups='47' and a.status=3 order by a.site,a.study_code;", con);
 
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
@@ -160,7 +162,8 @@ namespace maamta
                     con.Open();
                     MySqlCommand cmd;
 
-                    cmd = new MySqlCommand("select c.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm, (select 	concat(ROUND(((sum(z.lw_crf5a_31)/sum(		if((z.lw_crf5a_29 is NULL || z.lw_crf5a_29 =''), (SELECT (DATEDIFF(str_to_date(z.lw_crf5a_02, '%d-%m-%Y'), str_to_date(y.lw_crf3c_2, '%d-%m-%Y')))*2 from form_crf_3c as y where y.study_id=z.study_id), z.lw_crf5a_29)				))*100),1),'%')  from form_crf_5a as z where z.study_id=c.study_id) as Cumulative			from view_followups4a as a  left join studies as c on c.study_code=a.study_code left join form_crf_3a as d on d.assis_id=a.id where a.followups='47' and a.status=1  order by c.study_code;", con);
+                    cmd = new MySqlCommand("select c.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm, (select 	concat(ROUND(((sum(z.lw_crf5a_31)/sum(		if((z.lw_crf5a_29 is NULL || z.lw_crf5a_29 =''), (SELECT (DATEDIFF(str_to_date(z.lw_crf5a_02, '%d-%m-%Y'), str_to_date(y.lw_crf3c_2, '%d-%m-%Y')))*2 from form_crf_3c as y where y.study_id=z.study_id), z.lw_crf5a_29)				))*100),1),'%')  from form_crf_5a as z where z.study_id=c.study_id) as Cumulative, (SELECT z.date_of_attempt FROM form_crf_4a AS z WHERE z.followup_num='47' AND z.study_id=c.study_id) AS last_DOV			from view_followups4a as a  left join studies as c on c.study_code=a.study_code left join form_crf_3a as d on d.assis_id=a.id where a.followups='47' and a.status=1  order by c.study_code;", con);
+                    // cmd = new MySqlCommand("select c.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm, (select 	concat(ROUND(((sum(z.lw_crf5a_31)/sum(		if((z.lw_crf5a_29 is NULL || z.lw_crf5a_29 =''), (SELECT (DATEDIFF(str_to_date(z.lw_crf5a_02, '%d-%m-%Y'), str_to_date(y.lw_crf3c_2, '%d-%m-%Y')))*2 from form_crf_3c as y where y.study_id=z.study_id), z.lw_crf5a_29)				))*100),1),'%')  from form_crf_5a as z where z.study_id=c.study_id) as Cumulative			from view_followups4a as a  left join studies as c on c.study_code=a.study_code left join form_crf_3a as d on d.assis_id=a.id where a.followups='47' and a.status=1  order by c.study_code;", con);
 
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
@@ -181,8 +184,9 @@ namespace maamta
                 {
                     con.Open();
                     MySqlCommand cmd;
+                    cmd = new MySqlCommand("SELECT 	a.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm,'Cumulative',	(SELECT CONCAT(   MAX(STR_TO_DATE(z.date_of_attempt,'%d-%m-%Y')) ,', F/ups: ', MAX(z.followup_num)) AS last_dov FROM form_crf_4a AS z WHERE z.study_id=c.study_id  GROUP BY z.study_id) AS last_DOV 	FROM view_followups4a AS a LEFT JOIN studies AS c ON c.study_code=a.study_code WHERE a.followups='47' AND a.status=3 ORDER BY a.site,a.study_code;", con);
 
-                    cmd = new MySqlCommand("select 	a.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm,'Cumulative' from view_followups4a as a where a.followups='47' and a.status=3 order by a.site,a.study_code;", con);
+                    //cmd = new MySqlCommand("select 	a.study_code,a.woman_nm,a.husband_nm,a.dssid,a.arm,'Cumulative' from view_followups4a as a where a.followups='47' and a.status=3 order by a.site,a.study_code;", con);
 
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {

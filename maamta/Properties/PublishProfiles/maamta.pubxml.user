@@ -7,6 +7,8 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>D:\LiveTest\MaamtaBoard</_PublishTargetUrl>
+    <LastUsedBuildConfiguration>Debug</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
   </PropertyGroup>
   <ItemGroup>
     <File Include="addnewuser.aspx">
@@ -304,7 +306,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/29/2017 13:40:14</publishTime>
     </File>
     <File Include="bin/maamta.dll">
-      <publishTime>03/28/2020 13:58:50</publishTime>
+      <publishTime>06/10/2020 11:33:53</publishTime>
+    </File>
+    <File Include="bin/maamta.pdb">
+      <publishTime>06/10/2020 11:33:53</publishTime>
     </File>
     <File Include="bin/MySql.Data.Entity.dll">
       <publishTime>04/18/2018 22:09:16</publishTime>
@@ -391,7 +396,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/23/2019 17:03:34</publishTime>
     </File>
     <File Include="FupsStatus.aspx">
-      <publishTime>06/24/2019 12:27:20</publishTime>
+      <publishTime>06/10/2020 11:14:38</publishTime>
     </File>
     <File Include="infoNineMonths.aspx">
       <publishTime>05/09/2019 16:45:45</publishTime>
@@ -547,7 +552,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/19/2018 14:22:20</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>03/28/2020 13:58:51</publishTime>
+      <publishTime>06/10/2020 11:34:27</publishTime>
     </File>
   </ItemGroup>
 </Project>

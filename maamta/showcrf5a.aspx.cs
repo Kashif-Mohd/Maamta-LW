@@ -95,6 +95,8 @@ namespace maamta
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
                         cmd.Connection = con;
+                        cmd.CommandTimeout = 999999;
+                        cmd.CommandType = CommandType.Text;
                         sda.SelectCommand = cmd;
                         DataTable dt = new DataTable();
                         {
@@ -113,6 +115,8 @@ namespace maamta
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
                         cmd.Connection = con;
+                        cmd.CommandTimeout = 999999;
+                        cmd.CommandType = CommandType.Text;
                         sda.SelectCommand = cmd;
                         DataTable dt = new DataTable();
                         {
@@ -199,6 +203,8 @@ namespace maamta
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
                         cmd.Connection = con;
+                        cmd.CommandTimeout = 999999;
+                        cmd.CommandType = CommandType.Text;
                         sda.SelectCommand = cmd;
                         DataTable dt = new DataTable();
                         {
@@ -217,6 +223,8 @@ namespace maamta
                     MySqlDataAdapter sda = new MySqlDataAdapter();
                     {
                         cmd.Connection = con;
+                        cmd.CommandTimeout = 999999;
+                        cmd.CommandType = CommandType.Text;
                         sda.SelectCommand = cmd;
                         DataTable dt = new DataTable();
                         {
@@ -243,7 +251,7 @@ namespace maamta
         {
             if (e.Row.RowType == DataControlRowType.DataRow)
             {
-                if (e.Row.Cells[24].Text == "&nbsp;" || e.Row.Cells[24].Text == "" || e.Row.Cells[24].Text == "null")
+                if (e.Row.Cells[17].Text != "3" && (e.Row.Cells[24].Text == "&nbsp;" || e.Row.Cells[24].Text == "" || e.Row.Cells[24].Text == "null"))
                 {
                     float Q33;
                     Q33 = (float.Parse(e.Row.Cells[22].Text) / float.Parse(e.Row.Cells[20].Text)) * 100;

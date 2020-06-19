@@ -21,8 +21,14 @@ namespace maamta
                 Session["StudyIdCRF3a"] = null;
                 DateFormatPageLoad();
                 Session["WebForm"] = "showcrf3a";
+
+                txtCalndrDate.Enabled = true;
+                txtCalndrDate1.Enabled = true;
+                CheckBox1.Checked = false;
+
                 ShowData();
                 txtdssid.Focus();
+
             }
         }
 

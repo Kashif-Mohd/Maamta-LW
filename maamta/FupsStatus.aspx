@@ -117,6 +117,7 @@
                 <asp:BoundField DataField="dssid" HeaderText="DSSID" />
                 <asp:BoundField DataField="arm" HeaderText="ARM" />
                 <asp:BoundField DataField="Cumulative" HeaderText="Cumulative" />
+                <asp:BoundField DataField="last_DOV" HeaderText="Last DOV" />
             </Columns>
                 <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <EditRowStyle BackColor="#999999" />
@@ -148,6 +149,7 @@
                 <asp:BoundField DataField="dssid" HeaderText="DSSID" />
                 <asp:BoundField DataField="arm" HeaderText="ARM" />
                 <asp:BoundField DataField="Cumulative" HeaderText="Cumulative" />
+                <asp:BoundField DataField="last_DOV" HeaderText="Last DOV" />
             </Columns>          
         </asp:GridView>
 
