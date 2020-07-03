@@ -361,6 +361,29 @@ namespace maamta
 
 
 
+
+
+
+
+
+
+
+                //Measles1  Pending   (Pending_Greater_9_Months)
+                if (e.Row.Cells[62].Text == "&nbsp;" && e.Row.Cells[6].Text != "" && Convert.ToInt32(e.Row.Cells[6].Text) > 270)
+                {
+                    e.Row.Cells[59].Text = e.Row.Cells[59].Text + "Measles 1";
+                    TableCell DSSID = e.Row.Cells[10];
+                    DSSID.BackColor = System.Drawing.Color.FromName("#fab1a0");
+                }
+                //Measles2  Pending   (Pending_Greater_15_Months)
+                if (e.Row.Cells[65].Text == "&nbsp;" && e.Row.Cells[6].Text != "" && Convert.ToInt32(e.Row.Cells[6].Text) > 450)
+                {
+                    e.Row.Cells[60].Text = e.Row.Cells[60].Text + "Measles 2";
+                    TableCell DSSID = e.Row.Cells[10];
+                    DSSID.BackColor = System.Drawing.Color.FromName("#fab1a0");
+                }
+
+
             }
         }
 
