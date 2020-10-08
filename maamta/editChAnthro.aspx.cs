@@ -207,6 +207,25 @@ namespace maamta
                         cn.Close();
                     }
 
+
+
+                    // Update UserName in Audit Table:
+                    cn.Open();
+                    MySqlCommand cmd_audit = new MySqlCommand("SELECT MAX(id) as Audit_UID FROM audit_form_crf_3c", cn);
+                    string Audit_UID = null;
+                    MySqlDataReader dr_audit = cmd_audit.ExecuteReader();
+                    if (dr_audit.Read() == true)
+                    {
+                        Audit_UID = dr_audit["Audit_UID"].ToString();
+                        cn.Close();
+                        cn.Open();
+                        MySqlCommand Audit_UID2 = new MySqlCommand("update audit_form_crf_3c set update_status='Child-Weight (CRF3c)', user_name='" + Convert.ToString(Session["MPusername"]) + "' where  id='" + Audit_UID + "'", cn);
+                        Audit_UID2.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
+
+
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alerts", "javascript:alert('Weight Updated Successfully!');", true);
                     form_crf_3c_id = null;
 
@@ -280,6 +299,24 @@ namespace maamta
                         cn.Close();
                     }
 
+
+
+                    // Update UserName in Audit Table:
+                    cn.Open();
+                    MySqlCommand cmd_audit = new MySqlCommand("SELECT MAX(id) as Audit_UID FROM audit_form_crf_3c", cn);
+                    string Audit_UID = null;
+                    MySqlDataReader dr_audit = cmd_audit.ExecuteReader();
+                    if (dr_audit.Read() == true)
+                    {
+                        Audit_UID = dr_audit["Audit_UID"].ToString();
+                        cn.Close();
+                        cn.Open();
+                        MySqlCommand Audit_UID2 = new MySqlCommand("update audit_form_crf_3c set update_status='Child-Length (CRF3c)', user_name='" + Convert.ToString(Session["MPusername"]) + "' where  id='" + Audit_UID + "'", cn);
+                        Audit_UID2.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
+
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alerts", "javascript:alert('Length Updated Successfully!');", true);
                     form_crf_3c_id = null;
 
@@ -352,6 +389,24 @@ namespace maamta
                         cn.Close();
                     }
 
+
+
+                    // Update UserName in Audit Table:
+                    cn.Open();
+                    MySqlCommand cmd_audit = new MySqlCommand("SELECT MAX(id) as Audit_UID FROM audit_form_crf_3c", cn);
+                    string Audit_UID = null;
+                    MySqlDataReader dr_audit = cmd_audit.ExecuteReader();
+                    if (dr_audit.Read() == true)
+                    {
+                        Audit_UID = dr_audit["Audit_UID"].ToString();
+                        cn.Close();
+                        cn.Open();
+                        MySqlCommand Audit_UID2 = new MySqlCommand("update audit_form_crf_3c set update_status='Child-OFHC (CRF3c)', user_name='" + Convert.ToString(Session["MPusername"]) + "' where  id='" + Audit_UID + "'", cn);
+                        Audit_UID2.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
+
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alerts", "javascript:alert('OFHC Updated Successfully!');", true);
                     form_crf_3c_id = null;
 
@@ -370,6 +425,9 @@ namespace maamta
                 }
             }
         }
+
+
+
 
 
         protected void btnCRF3cMUAC_Click(object sender, EventArgs e)
@@ -422,6 +480,25 @@ namespace maamta
                         cmd2.ExecuteNonQuery();
                         cn.Close();
                     }
+
+
+
+
+                    // Update UserName in Audit Table:
+                    cn.Open();
+                    MySqlCommand cmd_audit = new MySqlCommand("SELECT MAX(id) as Audit_UID FROM audit_form_crf_3c", cn);
+                    string Audit_UID = null;
+                    MySqlDataReader dr_audit = cmd_audit.ExecuteReader();
+                    if (dr_audit.Read() == true)
+                    {
+                        Audit_UID = dr_audit["Audit_UID"].ToString();
+                        cn.Close();
+                        cn.Open();
+                        MySqlCommand Audit_UID2 = new MySqlCommand("update audit_form_crf_3c set update_status='Child-MUAC (CRF3c)', user_name='" + Convert.ToString(Session["MPusername"]) + "' where  id='" + Audit_UID + "'", cn);
+                        Audit_UID2.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
 
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alerts", "javascript:alert('MUAC Updated Successfully!');", true);
                     form_crf_3c_id = null;
@@ -559,6 +636,26 @@ namespace maamta
                         cn.Close();
                     }
 
+
+
+
+                    // Update UserName in Audit Table:
+                    cn.Open();
+                    MySqlCommand cmd_audit = new MySqlCommand("SELECT MAX(id) as Audit_UID FROM audit_form_crf_6", cn);
+                    string Audit_UID = null;
+                    MySqlDataReader dr_audit = cmd_audit.ExecuteReader();
+                    if (dr_audit.Read() == true)
+                    {
+                        Audit_UID = dr_audit["Audit_UID"].ToString();
+                        cn.Close();
+                        cn.Open();
+                        MySqlCommand Audit_UID2 = new MySqlCommand("update audit_form_crf_6 set update_status='Child-Weight', user_name='" + Convert.ToString(Session["MPusername"]) + "' where  id='" + Audit_UID + "'", cn);
+                        Audit_UID2.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
+
+
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alerts", "javascript:alert('Weight Updated Successfully!');", true);
                     form_crf_6_id = null;
 
@@ -632,6 +729,26 @@ namespace maamta
                         cn.Close();
                     }
 
+
+
+                    // Update UserName in Audit Table:
+                    cn.Open();
+                    MySqlCommand cmd_audit = new MySqlCommand("SELECT MAX(id) as Audit_UID FROM audit_form_crf_6", cn);
+                    string Audit_UID = null;
+                    MySqlDataReader dr_audit = cmd_audit.ExecuteReader();
+                    if (dr_audit.Read() == true)
+                    {
+                        Audit_UID = dr_audit["Audit_UID"].ToString();
+                        cn.Close();
+                        cn.Open();
+                        MySqlCommand Audit_UID2 = new MySqlCommand("update audit_form_crf_6 set update_status='Child-Length', user_name='" + Convert.ToString(Session["MPusername"]) + "' where  id='" + Audit_UID + "'", cn);
+                        Audit_UID2.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
+
+
+
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alerts", "javascript:alert('Length Updated Successfully!');", true);
                     form_crf_6_id = null;
 
@@ -704,6 +821,26 @@ namespace maamta
                         cn.Close();
                     }
 
+
+
+                    // Update UserName in Audit Table:
+                    cn.Open();
+                    MySqlCommand cmd_audit = new MySqlCommand("SELECT MAX(id) as Audit_UID FROM audit_form_crf_6", cn);
+                    string Audit_UID = null;
+                    MySqlDataReader dr_audit = cmd_audit.ExecuteReader();
+                    if (dr_audit.Read() == true)
+                    {
+                        Audit_UID = dr_audit["Audit_UID"].ToString();
+                        cn.Close();
+                        cn.Open();
+                        MySqlCommand Audit_UID2 = new MySqlCommand("update audit_form_crf_6 set update_status='Child-FOHC', user_name='" + Convert.ToString(Session["MPusername"]) + "' where  id='" + Audit_UID + "'", cn);
+                        Audit_UID2.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
+
+
+
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alerts", "javascript:alert('OFHC Updated Successfully!');", true);
                     form_crf_6_id = null;
 
@@ -774,6 +911,25 @@ namespace maamta
                         cmd2.ExecuteNonQuery();
                         cn.Close();
                     }
+
+
+                    // Update UserName in Audit Table:
+                    cn.Open();
+                    MySqlCommand cmd_audit = new MySqlCommand("SELECT MAX(id) as Audit_UID FROM audit_form_crf_6", cn);
+                    string Audit_UID = null;
+                    MySqlDataReader dr_audit = cmd_audit.ExecuteReader();
+                    if (dr_audit.Read() == true)
+                    {
+                        Audit_UID = dr_audit["Audit_UID"].ToString();
+                        cn.Close();
+                        cn.Open();
+                        MySqlCommand Audit_UID2 = new MySqlCommand("update audit_form_crf_6 set update_status='Child-MUAC', user_name='" + Convert.ToString(Session["MPusername"]) + "' where  id='" + Audit_UID + "'", cn);
+                        Audit_UID2.ExecuteNonQuery();
+                        cn.Close();
+                    }
+
+
+
 
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "alerts", "javascript:alert('MUAC Updated Successfully!');", true);
                     form_crf_6_id = null;

@@ -306,10 +306,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/29/2017 13:40:14</publishTime>
     </File>
     <File Include="bin/maamta.dll">
-      <publishTime>07/03/2020 16:15:06</publishTime>
+      <publishTime>10/08/2020 14:18:07</publishTime>
     </File>
     <File Include="bin/maamta.pdb">
-      <publishTime>07/03/2020 16:15:06</publishTime>
+      <publishTime>10/08/2020 14:18:07</publishTime>
     </File>
     <File Include="bin/MySql.Data.Entity.dll">
       <publishTime>04/18/2018 22:09:16</publishTime>
@@ -552,7 +552,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/19/2018 14:22:20</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/03/2020 16:16:02</publishTime>
+      <publishTime>10/08/2020 14:30:08</publishTime>
     </File>
   </ItemGroup>
 </Project>
